@@ -1,0 +1,22 @@
+{
+    "name": "DockerPython",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "python.pythonPath": "/usr/local/bin/python",
+                "terminal.integrated.shellIntegration.enabled": true,
+                "workbench.sideBar.location": "right",
+                "git.enableSmartCommit": true,
+                "git.confirmSync": false,
+                "git.autofetch": true,
+                "keyboard.layout": "00000419"
+            },
+            "extensions": [
+                "GitHub.copilot",
+                "ms-python.python",
+                "ms-toolsai.jupyter", 
+                "mechatroner.rainbow-csv"
+            ]
+        }
+    }
+}
