@@ -14,8 +14,9 @@
             "extensions": [
                 "GitHub.copilot",
                 "ms-python.python",
-                "ms-toolsai.jupyter", 
-                "mechatroner.rainbow-csv"
+                "ms-toolsai.jupyter",
+                "mechatroner.rainbow-csv",
+                "ms-azuretools.vscode-docker"
             ]
         }
     }
