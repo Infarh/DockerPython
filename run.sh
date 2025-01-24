@@ -1,0 +1,1 @@
+sudo docker run -d --restart=always -e DIRECTORY='/tmp/test' -v /tmp/:/tmp/ directory-monitor
