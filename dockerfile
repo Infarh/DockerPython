@@ -1,4 +1,4 @@
-FROM python:3.12.1 as builder
+FROM python:3.12.1 AS builder
 COPY requirements.txt .
 
 RUN pip install --user -r requirements.txt
