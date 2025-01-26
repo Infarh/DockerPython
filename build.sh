@@ -1,1 +1,1 @@
-sudo docker build -t directory-monitor .
+docker build -t flask-app --no-cache .
