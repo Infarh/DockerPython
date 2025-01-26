@@ -1,1 +1,1 @@
-sudo docker run -d --restart=always -e DIRECTORY='/tmp/test' -v /tmp/:/tmp/ directory-monitor
+docker run -p 5000:5000 --name flask flask-app

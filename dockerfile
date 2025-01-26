@@ -1,14 +1,13 @@
-FROM python:3.12.1 AS builder
-COPY requirements.txt .
+FROM python:3.9-slim
 
-RUN pip install --user -r requirements.txt
+WORKDIR /app
 
-FROM python:3.12.1-slim
-WORKDIR /code
+COPY . /app
 
-COPY --from=builder /root/.local /root/.local
-COPY ./src /code
+RUN pip install --no-cache-dir -r requirements.txt
 
-ENV PATH=/root/.local/bin:$PATH
+EXPOSE 5000
 
-CMD ["python", "-v", "main.py"]
+ENV FLASK_APP=app.py
+
+CMD ["flask", "run", "--host=0.0.0.0"]
