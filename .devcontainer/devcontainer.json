@@ -4,19 +4,23 @@
         "vscode": {
             "settings": {
                 "python.pythonPath": "/usr/local/bin/python",
+                "explorer.confirmDragAndDrop": false,
                 "terminal.integrated.shellIntegration.enabled": true,
                 "workbench.sideBar.location": "right",
                 "git.enableSmartCommit": true,
                 "git.confirmSync": false,
                 "git.autofetch": true,
-                "keyboard.layout": "00000419"
+                "keyboard.layout": "00000419",
+                "github.copilot.chat.temporalContext.enabled": true,
+                "github.copilot.chat.localeOverride": "ru"
             },
             "extensions": [
                 "GitHub.copilot",
                 "ms-python.python",
                 "ms-toolsai.jupyter",
                 "mechatroner.rainbow-csv",
-                "ms-azuretools.vscode-docker"
+                "ms-azuretools.vscode-docker",
+                "mhutchie.git-graph"
             ]
         }
     }
